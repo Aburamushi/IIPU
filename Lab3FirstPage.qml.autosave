@@ -1,0 +1,43 @@
+import QtQuick 2.5
+import QtQuick.Window 2.12
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.12
+import com.lab3.event
+
+Item {
+    
+     signal backButtonClicked();
+    id: root
+    background: Rectangle {
+        id: lab3Page
+        width: parent.width; height: parent.height
+        color: "white"
+        ScrollView{
+            anchors.fill: parent
+            clip: true
+            ScrollBar.vertical.policy: ScrollBar.AlwaysOn
+            implicitHeight: height
+            Label{
+                id: logs
+                padding: 10
+                text: "Enter \'D\' and something happens!"
+            }
+        }
+    }
+    Keys.onPressed:  (event) =>
+    {
+        if(event.key === Qt.Key_D)
+        {
+            logs.text += "\n" + keyEvent.getFirstKeyEvent+ "\n"
+        }
+//        if(event.key === 16777235)//PageUp
+//        {
+//            lab3StackView.push(dialogPage);
+
+//            logs.text += keyEvent.getSecondKeyEvent + "\n";
+//            lab3StackView.pop(lab3Page);
+//        }
+    }
+    
+    BackButton{onBackButtonClicked: root.backButtonClicked();}
+}

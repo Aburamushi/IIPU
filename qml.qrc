@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Cell.qml</file>
+        <file>Lab1Page.qml</file>
+        <file>MainPage.qml</file>
+        <file>Lab2MainPage.qml</file>
+        <file>BackButton.qml</file>
+        <file>Lab2CpuPage.qml</file>
+        <file>Lab2MemoryPage.qml</file>
+        <file>Lab2DevicesPage.qml</file>
+        <file>Lab3MainPage.qml</file>
+        <file>Lab3KeyDEvent.qml</file>
+        <file>Lab3PageUpKeyEvent.qml</file>
+        <file>Lab3FuncKeyEvent.qml</file>
+        <file>Lab3DAndPageUpKeysEvent.qml</file>
+        <file>Lab4Page.qml</file>
+        <file>Lab5Page.qml</file>
+        <file>212-Keyboard.png</file>
+        <file>mainFont.jpg</file>
+        <file>lcdWork.png</file>
+        <file>classic.jpg</file>
+        <file>mcs.jpg</file>
+        <file>keyboard.jpg</file>
+    </qresource>
+</RCC>
